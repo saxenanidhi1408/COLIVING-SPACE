@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roommates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>❤️ WELCOME TO CO-LIVING SPACE ❤️</header>
+
+<h1>Available Roommates</h1>
+<div id="roommates"></div>
+
+<script>
+fetch("http://localhost:3000/api/roommates")
+  .then(res => res.json())
+  .then(data => {
+    const box = document.getElementById("roommates");
+    data.forEach(p => {
+      box.innerHTML += `
+        <div class="card">
+          <h3>${p.name}</h3>
+          <p>Age: ${p.age}</p>
+          <p>Profession: ${p.job}</p>
+        </div>
+      `;
+    });
+  });
+</script>
+
+</body>
+</html>

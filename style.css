@@ -1,0 +1,224 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fff3f3;
+  color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #8b0000, #b11226);
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: #111;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffb3b3;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(to right, #b11226, #8b0000);
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 17px;
+}
+
+/* ===== IMAGE GALLERY ===== */
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  margin: 12px;
+  border-radius: 12px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== PAGE TITLES ===== */
+h1 {
+  text-align: center;
+  margin: 30px 0 15px;
+  color: #8b0000;
+}
+
+/* ===== ROOMS & ROOMMATES WRAPPER ===== */
+#rooms,
+#roommates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ===== CARD COMMON ===== */
+.card {
+  background: #e8f6f3;
+  width: 230px;
+  margin: 15px;
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 6px solid #0a9396;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.card h3 {
+  color: #0a9396;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #b11226;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* ===== PG SPECIAL COLOR ===== */
+.pg {
+  background: #e8f6f3;
+  border-left: 6px solid #0a9396;
+}
+
+.pg h3 {
+  color: #0a9396;
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  width: 320px;
+  background: white;
+  padding: 25px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+form textarea {
+  resize: none;
+  height: 90px;
+}
+
+form button {
+  width: 100%;
+  background: #b11226;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #8b0000;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+.blue-text {
+  color: #1e3cff;
+}
+.filters {
+  text-align: center;
+  margin: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filters button {
+  padding: 8px 14px;
+  background: #0a9396;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
